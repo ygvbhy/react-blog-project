@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const PostList = () => {
   const [selectMenu, setSelectMenu] = useState('전체');
@@ -54,7 +55,7 @@ const PostList = () => {
         {[...Array(10)].map((n) => {
           return (
             <div className="border-t border-gray-200 py-[24px]" key={n}>
-              <a href="" className="text-black">
+              <Link to={`/posts/${n}`} className="text-black">
                 <div className="flex items-center gap-2">
                   <div className="h-[36px] w-[36px] rounded-[50%] bg-gray-200"></div>
                   <div className="text-gray-400">email@email.com</div>
@@ -64,7 +65,7 @@ const PostList = () => {
                 </div>
                 <div className="mx-0 my-[14px] font-semibold">제목</div>
                 <div className="text-gray-400">내용</div>
-              </a>
+              </Link>
             </div>
           );
         })}
