@@ -6,7 +6,7 @@ const HeaderContent = () => {
         React Blog
       </Link>
       <div className="flex gap-4 text-gray-400">
-        <Link to="/">글쓰기</Link>
+        <Link to="/posts/new">글쓰기</Link>
         <Link to="/posts">게시글</Link>
         <Link to="/profile">프로필</Link>
       </div>
