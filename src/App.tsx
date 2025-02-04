@@ -5,13 +5,13 @@ import HeaderContent from './components/HeaderContent';
 import MainContent from './components/MainContent';
 function App() {
   return (
-    <>
+    <div className="transition-all duration-200 ease-linear">
       <HeaderContent />
       <MainContent>
         <Outlet />
       </MainContent>
       <FooterContent />
-    </>
+    </div>
   );
 }
 

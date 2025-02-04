@@ -3,6 +3,7 @@ import App from './App';
 import HomePage from './pages/HomePage';
 import PostDetail from './pages/PostDetail';
 import PostList from './pages/PostList';
+import Profile from './pages/Profile';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: '/posts/:id',
         element: <PostDetail />,
+      },
+      {
+        path: '/profile',
+        element: <Profile />,
       },
     ],
   },
