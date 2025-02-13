@@ -53,10 +53,10 @@ const PostList = () => {
         </div>
       </div>
       <div className="mx-auto min-h-[90vh] max-w-[680px] p-5 text-left leading-[24px]">
-        {[...Array(10)].map((n) => {
+        {[...Array(10)].map((n, i) => {
           return (
-            <div className="border-t border-gray-200 py-[24px]" key={n}>
-              <Link to={`/posts/${n}`} className="text-black">
+            <div className="border-t border-gray-200 py-[24px]" key={i}>
+              <Link to={`/posts/${i + 1}`} className="text-black">
                 <div className="flex items-center gap-2">
                   <div className="h-[36px] w-[36px] rounded-[50%] bg-gray-200"></div>
                   <div className="text-gray-400">email@email.com</div>

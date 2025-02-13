@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import { RouterProvider } from 'react-router-dom';
 import router from './Router';
+import firebase from './firebaseApp';
+
+console.log(firebase);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
