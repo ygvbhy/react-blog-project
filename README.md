@@ -44,5 +44,5 @@
 - Vite
 - Firebase
 - Route Router Dom
-- Firebase ( 로그인, 통신, 보안)
+- Firebase ( 로그인, 통신, 보안 )
 - Vercel ( 배포 )

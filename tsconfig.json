@@ -9,8 +9,15 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": "src"
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist"],
+  "paths": {
+    "pages/*": ["pages/*"],
+    "components/*": ["components/*"],
+    "types/*": ["types/*"],
+    "@/*": ["*"]
+  }
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Carousel from '../components/Carousel.jsx';
 
 const PostList = () => {
   const [selectMenu, setSelectMenu] = useState('전체');
@@ -11,7 +12,7 @@ const PostList = () => {
   return (
     <>
       <div className="flex">
-        <div>carousel</div>
+        <Carousel />
       </div>
       <div className="mx-auto my-0 flex max-w-[680px] cursor-pointer gap-3 px-[20px] pb-0 pt-[48px] text-gray-400">
         <div

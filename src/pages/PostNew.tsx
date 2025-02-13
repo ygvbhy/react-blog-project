@@ -1,5 +1,3 @@
-import React from 'react';
-
 const PostNew = () => {
   return (
     <form className="mx-auto mb-0 mt-10 max-w-[680px] p-5">
